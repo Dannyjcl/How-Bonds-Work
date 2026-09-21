@@ -58,10 +58,47 @@ img {
 }
 
 nav {
+  background-color: #0a0a0a;
   text-align: center;
   padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #333333;
 }
 
 nav a {
   color: #8ab4f8;
+}
+
+/* Classes */
+.content-section {
+  border-left: 4px solid #8ab4f8;
+}
+
+.risk-topic {
+  background-color: #2a1e1e;
+  border-left-color: #e57373;
+}
+
+.bond-list {
+  background-color: #16232e;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+/* IDs */
+#how-to-buy {
+  border-left-color: #81c995;
+}
+
+#bond-example {
+  background-color: #24211e;
+  border-left-color: #fbbc04;
+}
+
+#interest-rate-risk {
+  border-left-color: #f28b82;
+}
+
+#credit-risk {
+  border-left-color: #ff8a65;
 }

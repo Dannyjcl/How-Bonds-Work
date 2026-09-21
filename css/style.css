@@ -1,7 +1,9 @@
+/* Apply the same readable font to every element on the page */
 * {
   font-family: sans-serif;
 }
 
+/* Dark theme base: dark background, light text, comfortable reading size/line-height */
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -9,34 +11,40 @@ body {
   line-height: 1.6;
 }
 
+/* Give the header a slightly lighter panel color and center its content */
 header {
   background-color: #1f1f1f;
   text-align: center;
   padding: 20px;
 }
 
+/* Main page title: large, centered, and bright white for contrast on dark background */
 h1 {
   font-size: 36px;
   text-align: center;
   color: #ffffff;
 }
 
+/* Section headings: smaller than h1 but still centered and bright */
 h2 {
   font-size: 26px;
   text-align: center;
   color: #ffffff;
 }
 
+/* Keep paragraph text left-aligned and limited in width so lines stay easy to read */
 p {
   text-align: left;
   max-width: 700px;
   margin: 10px auto;
 }
 
+/* Add breathing room around the main content area */
 main {
   padding: 20px;
 }
 
+/* Give each article its own card-like panel, separated from the dark page background */
 article {
   background-color: #1e1e1e;
   border-radius: 8px;
@@ -45,11 +53,28 @@ article {
   max-width: 800px;
 }
 
+/* Flex container: places the "Why buy bonds" and "How to buy bonds" articles side by side with spacing between them */
+#bond-info-wrapper {
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Flex items: let each article inside the wrapper share the row equally */
+#bond-info-wrapper article {
+  flex: 1;
+  margin: 0;
+  max-width: none;
+}
+
+/* Constrain and center lists so they line up with the paragraph text width */
 ol, ul {
   max-width: 700px;
   margin: 10px auto;
 }
 
+/* Scale the image down, round its corners, and center it on the page */
 img {
   width: 50%;
   border-radius: 8px;
@@ -57,6 +82,7 @@ img {
   margin: auto;
 }
 
+/* Style the nav like a footer: near-black background and a top border to separate it from the content above */
 nav {
   background-color: #0a0a0a;
   text-align: center;
@@ -65,40 +91,50 @@ nav {
   border-top: 1px solid #333333;
 }
 
+/* Make footer/nav links a readable light blue on the dark background */
 nav a {
   color: #8ab4f8;
 }
 
 /* Classes */
+
+/* Shared style for every article "card": a blue accent border marks it as a content section */
 .content-section {
   border-left: 4px solid #8ab4f8;
 }
 
+/* Overrides .content-section on risk-related articles: a reddish tint/border signals caution */
 .risk-topic {
   background-color: #2a1e1e;
   border-left-color: #e57373;
 }
 
+/* Highlight the step-by-step bond example with its own dark-blue background */
 .bond-list {
   background-color: #16232e;
   border-radius: 6px;
   padding: 15px;
 }
 
-/* IDs */
+/* IDs (each targets one unique section, overriding the accent border color from .content-section) */
+
+/* "How to buy bonds" gets a green accent border */
 #how-to-buy {
   border-left-color: #81c995;
 }
 
+/* The worked example gets a gold accent border and a warm background tint */
 #bond-example {
   background-color: #24211e;
   border-left-color: #fbbc04;
 }
 
+/* "Interest Rate Risk" gets a coral accent border */
 #interest-rate-risk {
   border-left-color: #f28b82;
 }
 
+/* "Credit Risk" gets an orange accent border, distinct from the other risk section */
 #credit-risk {
   border-left-color: #ff8a65;
 }

@@ -138,3 +138,40 @@ nav a {
 #credit-risk {
   border-left-color: #ff8a65;
 }
+
+/* Responsive adjustments for small screens (phones) */
+@media (max-width: 600px) {
+  /* Slightly smaller base text so paragraphs don't require zooming or side-scrolling */
+  body {
+    font-size: 16px;
+  }
+
+  /* Shrink the oversized headings so they don't wrap awkwardly on narrow screens */
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  /* Stack the "Why buy bonds" / "How to buy bonds" articles instead of squeezing them side by side */
+  #bond-info-wrapper {
+    flex-direction: column;
+  }
+
+  /* Reduce padding/margins so content isn't cramped against the edges of a small screen */
+  main {
+    padding: 10px;
+  }
+
+  article {
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  /* Let the image take up more width on a small screen instead of looking tiny */
+  img {
+    width: 80%;
+  }
+}

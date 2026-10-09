@@ -1,6 +1,9 @@
+<!doctype html>
 <html lang="en">
      <!-- Create Title -->
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>How Bonds Work</title>
     <!-- Link to Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -8,28 +11,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Bootstrap container centers and constrains all page content -->
+  <div class="container mt-4">
     <!-- Page title and intro -->
-    <header>
+    <header class="text-center mb-4">
         <h1>What is a Bond?</h1>
-        <p>A bond is a debt security issued by a company that offers the bond holder a fixed annual yield and principal repayment at maturity. </p>
+        <p class="lead">A bond is a debt security issued by a company that offers the bond holder a fixed annual yield and principal repayment at maturity. </p>
         <p>When you buy a bond, you are essentially lending a company money, and in repayment they are offering you annual interest payments. </p>
     </header>
 
     <main>
-        <section id="bond-info-wrapper">
+        <section id="bond-info-wrapper" class="row g-3">
             <!-- Why buy bonds -->
-            <article id="why-buy" class="content-section">
+            <div class="col-md-6">
+            <article id="why-buy" class="content-section h-100">
                 <h2>Why buy bonds?</h2>
                 <p>Bonds are a great way to diversify your investment portfolio and reduce risk. They can provide a steady stream of income and are generally considered to be less volatile than stocks. </p>
                 <p>Additionally, bonds can be a good option for investors looking for a more conservative investment strategy, as they tend to be less affected by market fluctuations. </p>
             </article>
+            </div>
 
             <!-- How to buy bonds -->
-            <article id="how-to-buy" class="content-section">
+            <div class="col-md-6">
+            <article id="how-to-buy" class="content-section h-100">
                 <h2>How to buy bonds</h2>
                 <p>You can buy bonds through a broker or directly from the issuing company. When purchasing bonds, it is important to consider the credit rating of the issuer, as well as the interest rate and maturity date of the bond. </p>
                 <p>It is also important to understand the risks associated with investing in bonds, such as interest rate risk, credit risk, and default risk. </p>
             </article>
+            </div>
         </section>
 
         <!-- Example using lists (ordered and unordered) -->
@@ -63,10 +72,11 @@
     </main>
 
     <!-- Navigation to page 2 -->
-    <footer>
-        <nav>
-            <a href="page2.html">Read about bond issuers and investment risks on Page 2</a>
+    <footer class="mt-5">
+        <nav class="d-flex justify-content-center">
+            <a href="page2.html" class="btn btn-primary">Read about bond issuers and investment risks on Page 2</a>
         </nav>
     </footer>
+  </div>
 </body>
 </html>

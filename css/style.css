@@ -53,17 +53,14 @@ article {
   max-width: 800px;
 }
 
-/* Flex container: places the "Why buy bonds" and "How to buy bonds" articles side by side with spacing between them */
+/* Bootstrap row (.row .g-3) handles the side-by-side layout; just cap its width and center it */
 #bond-info-wrapper {
-  display: flex;
-  gap: 20px;
   max-width: 800px;
   margin: 20px auto;
 }
 
-/* Flex items: let each article inside the wrapper share the row equally */
+/* Articles fill their Bootstrap column instead of using the default centered-card margins */
 #bond-info-wrapper article {
-  flex: 1;
   margin: 0;
   max-width: none;
 }
@@ -89,11 +86,6 @@ nav {
   padding: 20px;
   margin-top: 40px;
   border-top: 1px solid #333333;
-}
-
-/* Make footer/nav links a readable light blue on the dark background */
-nav a {
-  color: #8ab4f8;
 }
 
 /* Classes */
@@ -153,11 +145,6 @@ nav a {
 
   h2 {
     font-size: 22px;
-  }
-
-  /* Stack the "Why buy bonds" / "How to buy bonds" articles instead of squeezing them side by side */
-  #bond-info-wrapper {
-    flex-direction: column;
   }
 
   /* Reduce padding/margins so content isn't cramped against the edges of a small screen */
